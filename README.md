@@ -65,19 +65,22 @@ On Olaf Hartong’s GitHub page, I opened **`sysmonconfig.xml`**, clicked **Raw*
 - In **File Explorer**, clicked the **address bar** in the Sysmon folder, copied the full path
 - In PowerShell, ran `cd "<that path>"`, then `dir` to confirm I was in the folder with **Sysmon64.exe** and **sysmonconfig.xml**
 
-```powershell
+```bash
 # Example — paste the path copied from File Explorer
 cd "C:\Users\<you>\Downloads\Sysmon"
 dir
+```
 📸 Screenshots:
 
-```bash
+
 Step 5 — Install Sysmon with Olaf’s config
 Ran the installer pointing to the config file:
 
 powershell
 Copy code
+```bash
 .\Sysmon64.exe -i sysmonconfig.xml
+```
 Expected result: Sysmon accepts EULA, installs the service/driver, and applies Olaf’s rules.
 
 📸 Screenshot:
@@ -86,7 +89,10 @@ Expected result: Sysmon accepts EULA, installs the service/driver, and applies O
 
 powershell
 Copy code
-.\Sysmon64.exe -i sysmonconfig.xml -accepteula -h sha256
+```bash
+.\Sysmon64.exe -i sysmonconfig.xml
+```
+
 Step 6 — Verify service and recent events
 Checked the service and sampled recent events:
 
