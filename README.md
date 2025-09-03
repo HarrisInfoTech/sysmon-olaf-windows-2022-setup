@@ -90,3 +90,11 @@ Expected result: Sysmon accepts EULA, installs the service/driver, and applies O
 ### **Step 6 — Validate in Event Viewer (filtered)**
 📸 Screenshot:
 ![Validate](./screenshots/validate.png)
+
+🏁 Results
+
+Installed Sysmon v15.15 with Olaf’s config
+
+Verified telemetry in Sysmon/Operational (IDs 1/3/11)
+
+Host ready for SIEM ingestion
