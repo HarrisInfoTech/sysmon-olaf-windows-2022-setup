@@ -21,7 +21,7 @@ This project documents how I installed **Sysmon v15.15** on **Windows Server 202
 | Sysmon service + driver    | Captures process, network, file telemetry |
 
 📸 *Diagram placeholder*  
-![Sysmon Architecture](./screenshots/sysmon-architecture.png)
+![Sysmon Architecture](./screenshots/lab-architecture.png)
 
 ---
 
