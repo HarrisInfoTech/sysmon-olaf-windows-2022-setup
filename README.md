@@ -71,7 +71,7 @@ cd "C:\Users\<you>\Downloads\Sysmon"
 dir
 ```
 📸 Screenshots:
-
+![CD](./screenshots/cd.png)
 
 
 ### **Step 5 — Install Sysmon with Olaf’s config**
@@ -85,30 +85,8 @@ Copy code
 Expected result: Sysmon accepts EULA, installs the service/driver, and applies Olaf’s rules.
 
 📸 Screenshot:
+![Install Sysmon](./screenshots/Install-Sysmon.png)
 
-✅ Optional hardening (future): use -accepteula -h sha256 to auto-accept the EULA and enable SHA256 hashing:
-
-powershell
-Copy code
-```bash
-.\Sysmon64.exe -i sysmonconfig.xml
-```
-
-
-### **Step 6 — Verify service and recent events**
-Checked the service and sampled recent events:
-
-powershell
-Copy code
-# Service status
-Get-Service -Name sysmon* | Format-List Name,Status,StartType
-
-# Quick sample of Sysmon events
-Get-WinEvent -LogName "Microsoft-Windows-Sysmon/Operational" -MaxEvents 5 |
-  Select-Object Id, TimeCreated, ProviderName |
-  Format-Table -Auto
-📸 Screenshots:
-
-
-
-### **Step 7 — Validate in Event Viewer (filtered)
+### **Step 6 — Validate in Event Viewer (filtered)**
+📸 Screenshot:
+![Validate](./screenshots/validate.png)
