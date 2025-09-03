@@ -73,7 +73,8 @@ dir
 📸 Screenshots:
 
 
-Step 5 — Install Sysmon with Olaf’s config
+
+### **Step 5 — Install Sysmon with Olaf’s config
 Ran the installer pointing to the config file:
 
 powershell
@@ -93,7 +94,8 @@ Copy code
 .\Sysmon64.exe -i sysmonconfig.xml
 ```
 
-Step 6 — Verify service and recent events
+
+### **Step 6 — Verify service and recent events
 Checked the service and sampled recent events:
 
 powershell
@@ -108,4 +110,5 @@ Get-WinEvent -LogName "Microsoft-Windows-Sysmon/Operational" -MaxEvents 5 |
 📸 Screenshots:
 
 
-Step 7 — Validate in Event Viewer (filtered)
+
+### **Step 7 — Validate in Event Viewer (filtered)
