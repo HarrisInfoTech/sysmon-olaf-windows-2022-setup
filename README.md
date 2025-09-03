@@ -74,7 +74,7 @@ dir
 
 
 
-### **Step 5 — Install Sysmon with Olaf’s config
+### **Step 5 — Install Sysmon with Olaf’s config**
 Ran the installer pointing to the config file:
 
 powershell
@@ -95,7 +95,7 @@ Copy code
 ```
 
 
-### **Step 6 — Verify service and recent events
+### **Step 6 — Verify service and recent events**
 Checked the service and sampled recent events:
 
 powershell
