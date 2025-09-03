@@ -71,7 +71,7 @@ cd "C:\Users\<you>\Downloads\Sysmon"
 dir
 📸 Screenshots:
 
-
+```bash
 Step 5 — Install Sysmon with Olaf’s config
 Ran the installer pointing to the config file:
 
